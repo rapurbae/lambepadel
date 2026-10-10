@@ -17,7 +17,7 @@ assets/img/   — hero (Unsplash)
 
 ## Aset
 
-Foto dari Unsplash — kredit fotografer ada di komentar `index.html` / halaman situs. Ganti `LAUNCH` di `script.js` untuk mengubah tanggal peluncuran.
+Background hero: "padel rackets & balls on blue court" — Sergio Contreras (@contarcos), Unsplash License. Kredit lengkap ada di komentar `index.html`. Ganti `LAUNCH` di `script.js` untuk mengubah tanggal peluncuran.
 
 ## Deploy
 
