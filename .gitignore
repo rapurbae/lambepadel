@@ -1,0 +1,6 @@
+# Vercel CLI linkage (berisi token — jangan di-commit)
+.vercel
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lambepadel — Coming Soon</title>
+  <meta name="description" content="Lambepadel — ekosistem turnamen padel: registrasi, scoring, bracket, dan ranking dalam satu platform. Coming soon — tinggalkan email untuk diingatkan." />
+  <meta name="theme-color" content="#05101f" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2305101f'/%3E%3Ccircle cx='32' cy='26' r='15' fill='none' stroke='%23c8f542' stroke-width='3.5'/%3E%3Ccircle cx='26' cy='22' r='1.6' fill='%23c8f542'/%3E%3Ccircle cx='32' cy='22' r='1.6' fill='%23c8f542'/%3E%3Ccircle cx='38' cy='22' r='1.6' fill='%23c8f542'/%3E%3Ccircle cx='29' cy='29' r='1.6' fill='%23c8f542'/%3E%3Ccircle cx='35' cy='29' r='1.6' fill='%23c8f542'/%3E%3Crect x='29.5' y='40' width='5' height='14' rx='2' fill='%23c8f542'/%3E%3C/svg%3E" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lambepadel — Coming Soon" />
+  <meta property="og:description" content="Ekosistem turnamen padel — registrasi, scoring, bracket, dan ranking dalam satu platform. Coming soon." />
+  <meta property="og:url" content="https://lambepadel.com" />
+  <meta property="og:image" content="https://lambepadel.com/assets/img/hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background photo: padel court (Unsplash) — credit noted in README -->
+  <div class="bg" aria-hidden="true"></div>
+  <div class="overlay" aria-hidden="true"></div>
+  <div class="court-grid" aria-hidden="true"></div>
+  <div class="glow glow-blue" aria-hidden="true"></div>
+  <div class="glow glow-lime" aria-hidden="true"></div>
+
+  <main>
+    <header class="brand">
+      <svg class="racket-mark" viewBox="0 0 64 64" role="img" aria-label="Lambepadel">
+        <circle cx="32" cy="25" r="17" fill="#0b1e38" stroke="#c8f542" stroke-width="3" />
+        <circle cx="25" cy="20" r="1.8" fill="#2f9bff" />
+        <circle cx="32" cy="20" r="1.8" fill="#2f9bff" />
+        <circle cx="39" cy="20" r="1.8" fill="#2f9bff" />
+        <circle cx="28.5" cy="26.5" r="1.8" fill="#2f9bff" />
+        <circle cx="35.5" cy="26.5" r="1.8" fill="#2f9bff" />
+        <circle cx="32" cy="32.5" r="1.8" fill="#2f9bff" />
+        <path d="M27 39.5h10" stroke="#c8f542" stroke-width="3" stroke-linecap="round" />
+        <rect x="29.5" y="41" width="5" height="15" rx="2.2" fill="#c8f542" />
+      </svg>
+      <p class="brand-name">LAMBEPADEL</p>
+      <p class="brand-badge"><span class="dot" aria-hidden="true"></span>Ekosistem Turnamen Padel</p>
+    </header>
+
+    <h1 class="headline">COMING <span class="line-accent">SOON</span></h1>
+
+    <p class="tagline">Satu lapangan untuk seluruh ekosistem turnamen padel.</p>
+    <p class="sub">Registrasi, scoring, bracket, dan ranking &mdash; satu platform<br class="br-desktop" /> untuk penyelenggara turnamen dan pemain padel Indonesia.</p>
+
+    <section class="countdown" aria-label="Hitung mundur menuju peluncuran">
+      <div class="cd-card">
+        <span class="led" aria-hidden="true"></span>
+        <span class="cd-num" id="cd-days">&mdash;</span>
+        <span class="cd-label">HARI</span>
+      </div>
+      <div class="cd-card">
+        <span class="led" aria-hidden="true"></span>
+        <span class="cd-num" id="cd-hours">&mdash;</span>
+        <span class="cd-label">JAM</span>
+      </div>
+      <div class="cd-card">
+        <span class="led" aria-hidden="true"></span>
+        <span class="cd-num" id="cd-mins">&mdash;</span>
+        <span class="cd-label">MENIT</span>
+      </div>
+      <div class="cd-card">
+        <span class="led" aria-hidden="true"></span>
+        <span class="cd-num" id="cd-secs">&mdash;</span>
+        <span class="cd-label">DETIK</span>
+      </div>
+    </section>
+    <p class="cd-done" id="cd-done" hidden>GAME ON &mdash; PLATFORM SUDAH LIVE!</p>
+
+    <div class="remind-row">
+      <form id="notify-form" class="notify" novalidate>
+        <input type="email" id="email" name="email" placeholder="Email kamu" autocomplete="email" required />
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button type="submit">Ingatkan Saya</button>
+      </form>
+      <a id="cal-link" class="cal-btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="16" rx="3" stroke="currentColor" stroke-width="2" />
+          <path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        Set Reminder
+      </a>
+    </div>
+    <p class="notify-err" id="notify-err" hidden>Masukkan alamat email yang valid.</p>
+    <p class="notify-done" id="notify-done" hidden>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="12" r="11" fill="#c8f542" />
+        <path d="M7 12.5l3.2 3L17 8.8" stroke="#05101f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      Siap! Kamu akan jadi yang pertama tahu saat lapangan dibuka.
+    </p>
+  </main>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="ticker-track">
+      <span>REGISTRASI ✦ SCORING ✦ BRACKET ✦ RANKING ✦ LIVE SCORE ✦ EKOSISTEM PADEL ✦&nbsp;</span>
+      <span>REGISTRASI ✦ SCORING ✦ BRACKET ✦ RANKING ✦ LIVE SCORE ✦ EKOSISTEM PADEL ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <footer>&copy; 2026 lambepadel.com</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
