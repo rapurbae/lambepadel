@@ -12,36 +12,6 @@
   var NOTIFY_ENDPOINT = "https://formsubmit.co/ajax/asraffahruddin741@gmail.com";
   var NOTIFY_SUBJECT = "[lambepadel.com] Email baru dari landing page";
 
-  /* ====== countdown ====== */
-  var el = {
-    days: document.getElementById("cd-days"),
-    hours: document.getElementById("cd-hours"),
-    mins: document.getElementById("cd-mins"),
-    secs: document.getElementById("cd-secs"),
-    done: document.getElementById("cd-done"),
-  };
-  var countdownBox = document.querySelector(".countdown");
-
-  function pad(n) { return n < 10 ? "0" + n : "" + n; }
-
-  function tick() {
-    var diff = LAUNCH.getTime() - Date.now();
-    if (diff <= 0) {
-      el.days.textContent = el.hours.textContent = el.mins.textContent = el.secs.textContent = "00";
-      el.done.hidden = false;
-      if (countdownBox) countdownBox.hidden = true;
-      return;
-    }
-    var s = Math.floor(diff / 1000);
-    el.days.textContent = pad(Math.floor(s / 86400));
-    el.hours.textContent = pad(Math.floor((s % 86400) / 3600));
-    el.mins.textContent = pad(Math.floor((s % 3600) / 60));
-    el.secs.textContent = pad(s % 60);
-  }
-
-  tick();
-  setInterval(tick, 1000);
-
   /* ====== google calendar "set reminder" ====== */
   function gcalStamp(d) {
     return d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");

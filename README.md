@@ -2,8 +2,8 @@
 
 Landing page "Coming Soon" untuk **Lambepadel** — ekosistem turnamen padel.
 
-- **Tema:** sporty navy gelap + biru lapangan + hijau bola padel (lime); racket padel SVG custom, countdown ala papan skor, ticker fitur platform.
-- **Fitur:** countdown menuju peluncuran (1 Maret 2027), form "Ingatkan Saya" (email), tombol "Set Reminder" (Google Calendar), ticker registrasi/scoring/bracket/ranking.
+- **Tema:** sporty navy gelap + biru lapangan + hijau bola padel (lime); racket padel SVG custom, ticker fitur platform.
+- **Fitur:** form "Ingatkan Saya" (email), tombol "Set Reminder" (Google Calendar), ticker registrasi/scoring/bracket/ranking.
 - **Domain:** [lambepadel.com](https://lambepadel.com)
 
 ## Struktur
@@ -11,7 +11,7 @@ Landing page "Coming Soon" untuk **Lambepadel** — ekosistem turnamen padel.
 ```
 index.html    — struktur halaman (racket mark SVG)
 styles.css    — tema sporty navy / blue / lime
-script.js     — countdown, form notifikasi, link kalender
+script.js     — form notifikasi, link kalender
 assets/img/   — hero (Unsplash)
 ```
 
